@@ -12,7 +12,7 @@ namespace TicTacToe.Tests
 
             var field = game.Field();
 
-            Assert.AreEqual(" ", field[1, 1]);
+            Assert.AreEqual(" ", field.GetCell(1,1));
         }
     }
 }

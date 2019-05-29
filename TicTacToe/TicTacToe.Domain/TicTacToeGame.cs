@@ -2,13 +2,17 @@ namespace TicTacToe.Domain
 {
     public class TicTacToeGame
     {
-        public string[,] Field()
+        public Field Field()
         {
-            var field = new string[3, 3];
+            return new Field();
+        }
+    }
 
-            field[1, 1] = " ";
-            
-            return field;
+    public class Field
+    {
+        public string GetCell(int row, int column)
+        {
+            return " ";
         }
     }
 }
