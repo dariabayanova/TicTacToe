@@ -9,7 +9,7 @@ namespace TicTacToe.Domain
             return field;
         }
 
-        public void Play(Cell cell, Row row, Column column)
+        public void Play(Cell cell, Coordinate coordinate)
         {
             field = new Field("X  ", "   ", "   ");
         }

@@ -9,8 +9,9 @@ namespace TicTacToe.Tests
         public void CanPlay_X_At_1_1()
         {
             var game = new TicTacToeGame();
-
-            game.Play(new Cell("X"), new Row(1), new Column(1));
+            var cell_1_1 = new Coordinate(new Row(1), new Column(1));
+            
+            game.Play(new Cell("X"), cell_1_1);
 
             var field = game.Field();
             Assert.AreEqual(new Field(
