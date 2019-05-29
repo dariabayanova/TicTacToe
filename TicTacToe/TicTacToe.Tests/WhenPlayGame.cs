@@ -29,10 +29,25 @@ namespace TicTacToe.Tests
             game.Play(new Cell("X"), cell_1_2);
             
             var field = game.Field();
-                        Assert.AreEqual(new Field(
+            Assert.AreEqual(new Field(
                             " X ",
                             "   ",
                             "   "), field);
+        }
+
+        [Test]
+        public void CanPlay_X_At_1_3()
+        {
+            var game = new TicTacToeGame();
+            var cell_1_3 = new Coordinate(new Row(1), new Column(3));
+            
+            game.Play(new Cell("X"), cell_1_3);
+            
+            var field = game.Field();
+            Assert.AreEqual(new Field(
+                "  X",
+                "   ",
+                "   "), field);
         }
     }
 }

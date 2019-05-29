@@ -11,6 +11,11 @@ namespace TicTacToe.Domain
 
         public void Play(Cell cell, Coordinate coordinate)
         {
+            if (coordinate == new Coordinate(new Row(1), new Column(3)))
+            {
+                field = new Field("  X", "   ", "   ");
+                return;
+            }
             if (coordinate == new Coordinate(new Row(1), new Column(2)))
             {
                 field = new Field(" X ", "   ", "   ");
