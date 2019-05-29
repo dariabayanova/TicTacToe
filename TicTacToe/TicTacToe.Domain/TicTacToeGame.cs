@@ -2,9 +2,16 @@ namespace TicTacToe.Domain
 {
     public class TicTacToeGame
     {
-        public Field Field(string row1, string row2, string row3)
+        private Field field = new Field("   ", "   ", "   ");
+
+        public Field Field()
         {
-            return new Field(row1, row2, row3);
+            return field;
+        }
+
+        public void Play(Cell cell, Row row, Column column)
+        {
+            field = new Field("X  ", "   ", "   ");
         }
     }
 }

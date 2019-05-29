@@ -10,9 +10,7 @@ namespace TicTacToe.Tests
         {
             var game = new TicTacToeGame();
             
-            var field = game.Field( "   ",
-                                    "   ",
-                                    "   ");
+            var field = game.Field();
 
             var emptyField = new Field(  "   ",
                                         "   ",
