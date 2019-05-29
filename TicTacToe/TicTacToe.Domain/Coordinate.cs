@@ -34,6 +34,18 @@ namespace TicTacToe.Domain
             }
         }
         
+        public static bool operator == (Coordinate coordinate1, Coordinate coordinate2)
+        {
+            if (ReferenceEquals(coordinate1, null) || ReferenceEquals(coordinate2, null))
+                return false;
+            return coordinate1.Equals(coordinate2);
+        }
+
+        public static bool operator !=(Coordinate coordinate1, Coordinate coordinate2)
+        {
+            return !(coordinate1.Equals(coordinate2));
+        }
+
         #endregion
     }
 }
