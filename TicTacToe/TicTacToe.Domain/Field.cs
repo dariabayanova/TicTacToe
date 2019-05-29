@@ -2,7 +2,7 @@ namespace TicTacToe.Domain
 {
     public class Field
     {
-        public string GetCell(int row, int column)
+        public string GetCell(Row row, Column column)
         {
             return " ";
         }
