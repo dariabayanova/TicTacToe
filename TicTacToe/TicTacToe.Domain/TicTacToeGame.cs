@@ -4,7 +4,12 @@ namespace TicTacToe.Domain
     {
         public Field Field()
         {
-            return new Field();
+            return new Field("", "", "");
+        }
+
+        public Field Field(string s, string s1, string s2)
+        {
+            return new Field(s, s1, s2);
         }
     }
 }
