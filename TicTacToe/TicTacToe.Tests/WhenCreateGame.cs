@@ -9,6 +9,7 @@ namespace TicTacToe.Tests
         public void FieldIsEmpty()
         {
             var game = new TicTacToeGame();
+            
             var field = game.Field( "   ",
                                     "   ",
                                     "   ");
